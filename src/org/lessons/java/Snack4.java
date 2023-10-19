@@ -22,6 +22,13 @@ public class Snack4 {
             reversedWord += word.charAt(i);
         }
 
+        // condizione per stapare la parola palindroma o no
+        if (word.equals(reversedWord)) {
+            System.out.println("La parola è palindroma.");
+        } else {
+            System.out.println("La parola non è palindroma.");
+        }
+
         //chiudo lo scan
         scan.close();
     }
