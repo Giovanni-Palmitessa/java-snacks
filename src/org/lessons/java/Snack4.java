@@ -14,6 +14,11 @@ public class Snack4 {
         System.out.println("Dammi una parola e ti dirò se è palindroma: ");
         String word = scan.nextLine();
 
+        //definisco la variabile della parola al contrario
+        String reversedWord = "";
+
+        //
+
         //chiudo lo scan
         scan.close();
     }
