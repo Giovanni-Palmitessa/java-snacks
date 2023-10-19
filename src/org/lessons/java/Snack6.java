@@ -19,6 +19,12 @@ public class Snack6 {
         int minutes = (seconds % 3600) / 60;
         int remainingSeconds = seconds % 60;
 
+        // Creare una stringa formattata "hh:mm:ss"
+        String timeString = String.format("%02dh:%02dm:%02ds", hours, minutes, remainingSeconds);
+
+        // Stampare la stringa generata
+        System.out.println("Tempo convertito: " + timeString);
+
         //chiudere lo scanner
         scan.close();
     }
