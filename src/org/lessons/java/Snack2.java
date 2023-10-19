@@ -27,6 +27,8 @@ public class Snack2 {
             String fakeName = names[indexName];
             String fakeSurname = surnames[indexSurname];
 
+            //stampa i nomi e cognomi mischiati
+            System.out.println(fakeName + " " + fakeSurname);
         }
     }
 }
