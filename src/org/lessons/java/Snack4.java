@@ -14,5 +14,7 @@ public class Snack4 {
         System.out.println("Dammi una parola e ti dirò se è palindroma: ");
         String word = scan.nextLine();
 
+        //chiudo lo scan
+        scan.close();
     }
 }
