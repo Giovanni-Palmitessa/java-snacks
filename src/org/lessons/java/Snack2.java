@@ -23,6 +23,10 @@ public class Snack2 {
         for (int i = 0; i < names.length; i++) {
             int indexName = rand.nextInt(nameLength);
             int indexSurname = rand.nextInt(surnameLength);
+            //variabili di nomi e cognomi finti
+            String fakeName = names[indexName];
+            String fakeSurname = surnames[indexSurname];
+
         }
     }
 }
