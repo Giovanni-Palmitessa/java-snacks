@@ -14,16 +14,19 @@ public class Snack4 {
         System.out.println("Dammi una parola e ti dirò se è palindroma: ");
         String word = scan.nextLine();
 
+        // Rimuovi gli spazi dalla stringa
+        String wordWithoutSpaces = word.replaceAll("\\s", "");
+
         //definisco la variabile della parola al contrario
         String reversedWord = "";
 
         //ciclo for per mettere la parola al contrario
-        for (int i = word.length() - 1; i >= 0; i--) {
-            reversedWord += word.charAt(i);
+        for (int i = wordWithoutSpaces.length() - 1; i >= 0; i--) {
+            reversedWord += wordWithoutSpaces.charAt(i);
         }
 
         // condizione per stapare la parola palindroma o no
-        if (word.equals(reversedWord)) {
+        if (wordWithoutSpaces.equals(reversedWord)) {
             System.out.println("La parola è palindroma.");
         } else {
             System.out.println("La parola non è palindroma.");
