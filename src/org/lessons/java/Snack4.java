@@ -17,7 +17,10 @@ public class Snack4 {
         //definisco la variabile della parola al contrario
         String reversedWord = "";
 
-        //
+        //ciclo for per mettere la parola al contrario
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversedWord += word.charAt(i);
+        }
 
         //chiudo lo scan
         scan.close();
